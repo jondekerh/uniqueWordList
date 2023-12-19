@@ -1,14 +1,14 @@
-# uniqueWords
+# uniqueWordList
 Creates an object with a list of each unique word in a plaintext document.
 
-Install with ```pip install uniqueWords```
+Install with ```pip install uniqueWordList```
 
 Takes the file path as its input. ```var.wordCount``` returns the list's length, ```var.wordList``` returns the list itself.
 
 ```python
-import uniqueWords
+import uniqueWordList
 
-test_text = uniqueWords.getList('someBook.txt', alphanumeric = True)
+test_text = uniqueWordList.getList('someBook.txt', alphanumeric = True)
 
 print(test_text.wordCount)
 
