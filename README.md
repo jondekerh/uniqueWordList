@@ -8,7 +8,7 @@ Takes the file path as its input. ```var.wordCount``` returns the list's length,
 ```python
 import uniqueWordList
 
-test_text = uniqueWordList.getList('someBook.txt', alphanumeric = True)
+test_text = uniqueWordList.getList('someBook.txt', alphanumeric = True, count = True)
 
 print(test_text.wordCount)
 
@@ -17,6 +17,8 @@ with open('asdf.txt', 'w') as output:
   ```
 
 ## Strengths, weaknesses, and things to consider
+Setting count to ```True``` will return a list with 2 columns, one for the word itself and the second for a tally of how often the word was used. This will take a long time compared to the normal list. It is set to ```False``` by default.
+
 Setting alphanumeric to ```True``` will count any number or alphanumeric combo (ex: 1b, 1e5). Some of these will probably not be real words. It is set to ```False``` by default.
 
 Speaking of things that aren't real words: if there are any typos or deliberate misspellings they will be counted as separate words. Similarily, the plural versions of words will be counted as their own words as well. 
